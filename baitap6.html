@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="baitap6.css">
+<title>Calculator</title>
+</head>
+<body>
+	
+	<table >
+		<tr>
+		<td colspan='5'><input id='nhap' type='text'></td>
+		</tr>	
+	      	<tr>
+	      		<td><input class='btn' type='button' value='7' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='8' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='9' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='/' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='<-' onclick='nhap.value=nhap.value.substr(0,nhap.value.length-1)'></td>
+	      	</tr>
+	      	<tr>
+	      		<td><input class='btn' type='button' value='4' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='5' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='6' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='*' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='C' onclick="nhap.value=''"></td>
+	      	</tr>
+	      	<tr>
+	      		<td><input class='btn' type='button' value='1' onclick='nhap.value+=this.value'></td>	
+	      		<td><input class='btn' type='button' value='2' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='3' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='+' onclick='nhap.value+=this.value'></td>
+	      		<td rowspan='2'><input id='equa' class='btn' type='button' value='=' onclick='nhap.value=eval(nhap.value)'></td>
+	      	</tr>
+	      	<tr>
+	      		<td colspan='2'><input id='nut0' class='btn' type='button' value='0' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='.' onclick='nhap.value+=this.value'></td>
+	      		<td><input class='btn' type='button' value='-' onclick='nhap.value+=this.value'></td>
+	      	</tr>
+
+</table>
+</body>
+</html>
